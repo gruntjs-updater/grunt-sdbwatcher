@@ -1,0 +1,27 @@
+{
+  "name": "grunt-sdbwatcher",
+  "version": "0.0.1",
+  "description": "The best Grunt plugin ever.",
+  "repository": "https://github.com/haoyang-zheng/grunt-sdbwatcher.git",
+  "author": {
+    "name": "haoyang-zheng&cuishuying",
+    "email": "",
+    "url": ""
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.3.0",
+    "time-grunt": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
