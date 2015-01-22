@@ -9,7 +9,10 @@ module.exports = function(grunt){
 		
 		sdbwatcher:{
 			files:['<%= pkg.watchPath %>/**/media/**/*.js','<%= pkg.watchPath %>/**/media/**/*.css'],
-			tasks:[]
+			tasks:[],
+			options: {
+            event: ['added', 'changed']
+        }
 			
 		}
 	});

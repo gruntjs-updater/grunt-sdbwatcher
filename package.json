@@ -1,6 +1,6 @@
 {
   "name": "grunt-sdbwatcher",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The best Grunt plugin ever.",
   "repository": "https://github.com/haoyang-zheng/grunt-sdbwatcher.git",
   "author": {

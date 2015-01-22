@@ -12,7 +12,6 @@ var _ = require('lodash');
 var waiting = 'Waiting...';
 var changedFiles = Object.create(null);
 var watchers = [];
-//cuishuying
 var fs=require('fs');
 var file;
 
@@ -59,12 +58,8 @@ module.exports = function(grunt) {
       // Log which file has changed, and how.
       grunt.log.ok('File "' + filepath + '" ' + changedFiles[filepath] + '.');
 	  file = filepath;
-	  //cuishuying
-	  //var filepathDest='D:/grunt-test/workspace/HIBIKI_v1_0/webapp/';
 	  var pathTemp = grunt.file.readJSON('path.json');
-	  grunt.log.ok(pathTemp.destPath);
 	  var filepathDest=pathTemp.destPath;
-	  //path.resolve(__dirname, 'conf', '.json');
       var filename = "";
       var fileParserLength = file.split(path.sep).length;
         filename = file.split(path.sep)[fileParserLength - 1];
@@ -78,18 +73,16 @@ module.exports = function(grunt) {
 			}
 	  
 	  }
-		grunt.log.ok(file);
         if(fs.existsSync(filepathDest + path.sep + filename)){
           fs.createReadStream(file).pipe(fs.createWriteStream(filepathDest + path.sep + filename));
-		  grunt.log.ok(filename+'已更新1'+ filepathDest);
+		  grunt.log.ok(filename+'已更新');
         }
         else{
           if(!fs.existsSync(filepathDest)) {
-			  grunt.log.ok(filepathDest);
 			mkdirsSync(filepathDest);
           }
 		fs.createReadStream(file).pipe(fs.createWriteStream(filepathDest + path.sep + filename));
-        grunt.log.ok(filename+'已更新2'+ filepathDest);
+        grunt.log.ok(filename+'已更新');
 	  }
     });
     // Reset changedFiles
