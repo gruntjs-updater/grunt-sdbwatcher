@@ -13,5 +13,7 @@ module.exports = function(grunt){
 			
 		}
 	});
-	grunt.loadTasks('tasks');
+	
+    grunt.loadNpmTasks('grunt-sdbwatcher');
+	grunt.registerTask('default', ['sdbwatcher']);
 }
