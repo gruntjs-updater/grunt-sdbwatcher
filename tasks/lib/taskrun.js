@@ -1,11 +1,12 @@
 /*
  * grunt-sdbwatcher
  * 
- *
- * Copyright (c) 2015 haoyang-zheng&cuishuying
+ * Copyright (c) 2015  DreamArts Corporation.
+ * Haoyang Zheng & Shuying Cui
  * Licensed under the MIT license.
+ *
  */
-
+ 
 'use strict';
 
 var path = require('path');

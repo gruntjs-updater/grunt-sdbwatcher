@@ -1,12 +1,12 @@
 {
   "name": "grunt-sdbwatcher",
-  "version": "0.0.2",
-  "description": "The best Grunt plugin ever.",
+  "version": "1.0.3",
+  "description": "SmartDB media file auto-deployer.",
   "repository": "https://github.com/haoyang-zheng/grunt-sdbwatcher.git",
   "author": {
-    "name": "haoyang-zheng&cuishuying",
+    "name": "Dreamarts China",
     "email": "",
-    "url": ""
+    "url": "www.dreamarts.co.jp"
   },
   "keywords": [
     "gruntplugin"

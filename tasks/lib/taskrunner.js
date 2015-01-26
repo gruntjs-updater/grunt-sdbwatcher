@@ -1,9 +1,10 @@
 /*
  * grunt-sdbwatcher
  * 
- *
- * Copyright (c) 2015 haoyang-zheng&cuishuying
+ * Copyright (c) 2015  DreamArts Corporation.
+ * Haoyang Zheng & Shuying Cui
  * Licensed under the MIT license.
+ *
  */
 
 'use strict';
@@ -14,10 +15,8 @@ var util = require('util');
 var _ = require('lodash');
 var async = require('async');
 
-// Track which targets to run after reload
 var reloadTargets = [];
 
-// A default target name for config where targets are not used (keep this unique)
 var defaultTargetName = '_$_default_$_';
 
 module.exports = function(grunt) {
