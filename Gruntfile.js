@@ -9,11 +9,11 @@ module.exports = function(grunt){
 			tasks:[],
 			options: {
 				event: ['added', 'changed']
-        }
+			}
 			
 		}
 	});
 	
-    grunt.loadNpmTasks('grunt-sdbwatcher');
+	grunt.loadNpmTasks('grunt-sdbwatcher');
 	grunt.registerTask('default', ['sdbwatcher']);
-}
+	}
